@@ -7,10 +7,11 @@ mongoose
         useNewUrlParser: true, // <--- Option passed to get rid of deprecation message in terminal
         useUnifiedTopology: true, // <--- Option passed to get rid of deprecation message in terminal
     })
-    .then(() => console.log("Established a connection to the database"))
-    .catch((err) =>
+    .then(() =>
         console.log(
-            "Something went wrong when connecting to the database ",
-            err
+            ". .. ... ........A connection to the database is established"
         )
+    )
+    .catch((err) =>
+        console.log("Something went wrong when connecting to the database", err)
     );
